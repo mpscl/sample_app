@@ -10,7 +10,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: vacas_test
+  database: blog_ucv
   pool: 5
   username: escuela
   password: escuela
@@ -19,23 +19,23 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: vacas_development
+  database: blog_ucv_pro
   pool: 5
   username: escuela
   password: escuela
   host: localhost
 
 
-  $(document).ready(function() {
-      console.debug($('#welcomeModal').attr("pageref"));
-      if ($.cookie('modal_shown') == null && $('#welcomeModal').attr("pageref") == "https://celuseguro.com/" ) {
-          $.cookie('modal_shown', 'yes', { expires: 7, path: '/' });
-          $('#welcomeModal').modal('show')
-      }
-      if ($.cookie('modal_shown') == null && $('#welcomeModal').attr("pageref") == "https://www.celuseguro.com/" ) {
-          $.cookie('modal_shown', 'yes', { expires: 7, path: '/' });
-          $('#welcomeModal').modal('show')
-      }
-  });
+#   $(document).ready(function() {
+#       console.debug($('#welcomeModal').attr("pageref"));
+#       if ($.cookie('modal_shown') == null && $('#welcomeModal').attr("pageref") == "https://celuseguro.com/" ) {
+#           $.cookie('modal_shown', 'yes', { expires: 7, path: '/' });
+#           $('#welcomeModal').modal('show')
+#       }
+#       if ($.cookie('modal_shown') == null && $('#welcomeModal').attr("pageref") == "https://www.celuseguro.com/" ) {
+#           $.cookie('modal_shown', 'yes', { expires: 7, path: '/' });
+#           $('#welcomeModal').modal('show')
+#       }
+#   });
 
-pageref="<?=$this->request->referer()?>"
+# pageref="<?=$this->request->referer()?>"
