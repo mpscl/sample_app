@@ -5,13 +5,13 @@ Things you may want to cover:
 
 acabo de cambiar
 
-* Ruby version
+* Ruby ANDRES
 
 * System dependencies
 
 * Configuration
 
-* Database creation
+* Database ANDRES
 
 estoy cambiando
 
